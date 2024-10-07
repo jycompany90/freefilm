@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아파트 하자보수 관리 시스템</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 경로 확인 -->
+</head>
+<body>
+    <div class="container">
+        <h1>아파트 하자보수 관리 시스템</h1>
+        
+        <h2>하자 보수 요청</h2>
+        <form id="repairRequestForm">
+            <input type="text" id="residentName" name="residentName" placeholder="거주자 이름" required>
+            <input type="text" id="unitNumber" name="unitNumber" placeholder="호수" required>
+            <textarea id="issueDescription" name="issueDescription" placeholder="하자 내용" required></textarea>
+            <button type="submit">요청하기</button>
+        </form>
+        
+        <h2>하자 보수 요청 목록</h2>
+        <ul id="repairRequestList"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
